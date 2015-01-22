@@ -1,0 +1,63 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.android.androidview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:orientation="horizontal" >
+
+        <com.android.androidview.widget.ChangeColorIconView
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon_n="@drawable/ic_draw_refresh_normal"
+            zhy:text="@string/tab_weixin"
+            zhy:text_size="12sp" />
+
+        <com.android.androidview.widget.ChangeColorIconView
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon_n="@drawable/ic_drawer_feedback_normal"
+            zhy:text="@string/tab_contact"
+            zhy:text_size="12sp" />
+
+        <com.android.androidview.widget.ChangeColorIconView
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon_n="@drawable/ic_drawer_imdata_normal"
+            zhy:text="@string/tab_find"
+            zhy:text_size="12sp" />
+
+        <com.android.androidview.widget.ChangeColorIconView
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            zhy:icon_n="@drawable/ic_drawer_location_normal"
+            zhy:text="@string/tab_me"
+            zhy:text_size="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
